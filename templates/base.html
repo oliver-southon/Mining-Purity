@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mining Purity</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+    {% block styles %}
+    {% endblock %}
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="{{ url_for('index') }}">Iron Purity Predictor</a>
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url_for('modelling') }}" target="_blank">View the Notebook</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="mailto:oliversouthon@gmail.com">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="content container my-5">
+        {% block main %}{% endblock %}
+    </div>
+
+    <footer class="bg-light py-3 fixed-bottom">
+        <div class="container text-center">
+            <p class="mb-0">Access the 
+                <a href="https://github.com/oliver-southon/Mining-Purity">Github Repo</a>
+            </p>
+            <p class="mb-0">Images sourced from <a href="https://www.flaticon.com/free-icons/coal" title="coal icons">Flaticon</a>
+            Data sourced from <a href="https://www.kaggle.com/datasets/edumagalhaes/quality-prediction-in-a-mining-process" title="data">Kaggle</a></p>
+        </div>
+    </footer>
+
+    {% block scripts %}
+    {% endblock %}
+</body>
+</html>

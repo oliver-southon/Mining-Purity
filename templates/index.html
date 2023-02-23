@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block styles %}
+<link rel="stylesheet" href="../static/styles/progress_bars.css">
+{% endblock %}
+{% block main %}
+<div class="row align-items-center">
+    <div class="col-md-8 bg-light">
+       {% include 'includes/parameter_form.html' %}
+    </div>
+    <div class="col-md-4 d-flex justify-content-center">
+        <img src="../static/src/coal.png" alt="picture of minecart" class="img-fluid" style="width: 60%; height: auto;">
+    </div>
+</div>
+<div class="row mt-4">
+    {% include 'includes/purity_score.html' %}
+</div>
+{% endblock %}
+{% block scripts %}
+<script src="../static/js/sliders.js"></script>
+{% endblock %}

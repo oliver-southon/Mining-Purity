@@ -1,0 +1,42 @@
+<form method="POST" action="/">
+    <div class="row">
+        <h3 class="text-center mb-4">Parameter Inputs</h3>
+    </div>
+    <div class="row mb-3">
+        <div class="col-sm-4">
+            <label for="slider1" class="form-label">Iron Feed</label>
+            <input type="range" class="form-range" id="slider1" name="slider1" min="42.74" max="65.78" value="56.29" step="0.01">
+            <small id="slider1-value" class="form-text text-muted"></small>
+        </div>
+        <div class="col-sm-4">
+            <label for="slider2" class="form-label">Flotation Air Flow 1</label>
+            <input type="range" class="form-range" id="slider2" name="slider2" min="175.1" max="376.0" value="299.4" step="0.1">
+            <small id="slider2-value" class="form-text text-muted"></small>
+        </div>
+        <div class="col-sm-4">
+            <label for="slider3" class="form-label">Flotation Air Flow 2</label>
+            <input type="range" class="form-range" id="slider3" name="slider3" min="292.2" max="305.9" value="299.4" step="0.1">
+            <small id="slider3-value" class="form-text text-muted"></small>
+        </div>
+    </div>
+    <div class="row mb-3">
+        <div class="col-sm-4">
+            <label for="slider4" class="form-label">Flotation Air Flow 3</label>
+            <input type="range" class="form-range" id="slider4" name="slider4" min="286.29" max="310.27" value="299.9" step="0.1">
+            <small id="slider4-value" class="form-text text-muted"></small>
+        </div>
+        <div class="col-sm-4">
+            <label for="slider6" class="form-label">Ore Pulp Density</label>
+            <input type="range" class="form-range" id="slider5" name="slider5" min="1.51" max="1.85" value="1.68" step="0.01">
+            <small id="slider5-value" class="form-text text-muted"></small>
+        </div>
+        <div class="col-sm-4">
+            <label for="slider6" class="form-label">Ore Pulp Flow</label>
+            <input type="range" class="form-range" id="slider6" name="slider6" min="376.2" max="418.6" value="397.6" step="0.1">
+            <small id="slider6-value" class="form-text text-muted"></small>
+        </div>
+    </div>
+    <div class="text-start">
+        <button type="submit" class="btn btn-primary"> >> Run Prediction</button>
+    </div>
+</form>

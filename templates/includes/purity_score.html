@@ -1,0 +1,23 @@
+{% if preds %}
+<div class="row">
+    <h2 class="text-center">Results:</h2>
+</div>
+<div class="row">
+    <div class="col">
+        <h5>{{ label1 }}</h5>
+        <div class="progress mb-3">
+            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="{{ value1/35*100 }}" aria-valuemin="0" aria-valuemax="100" style="width: {{value1/35*100}}%;">{{ value1 }}</div>
+        </div>
+
+        <h5>{{ label2 }}</h5>
+        <div class="progress mb-3">
+            <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" aria-valuenow="{{ value2/35*100 }}" aria-valuemin="0" aria-valuemax="100" style="width: {{value2/35*100}}%;">{{ value2 }}</div>
+        </div>
+
+        <h5>{{ label3 }}</h5>
+        <div class="progress">
+            <div class="progress-bar progress-bar-striped progress-bar-animated bg-info" role="progressbar" aria-valuenow="{{ value2/35*100 }}" aria-valuemin="0" aria-valuemax="100" style="width: {{value3/35*100}}%;">{{ value3 }}</div>
+        </div>
+    </div>
+</div>
+{% endif %}
