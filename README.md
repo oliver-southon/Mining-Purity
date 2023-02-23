@@ -1,3 +1,8 @@
+To-DO
+- Further analysis of models
+- Allow file users to upload data files of feature values, to run multiple predictions at once
+- Provide AI-generated explanations of each output
+
 # Mining-Purity
 Predict Mining Purity using Regressive Machine Learning Models. Data sourced from: https://www.kaggle.com/datasets/edumagalhaes/quality-prediction-in-a-mining-process
 
